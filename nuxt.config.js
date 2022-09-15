@@ -11,7 +11,17 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      { rel: "icon", type: "image/png", href: "/favicon-32x32.png" },
+    ],
+    script: [
+      {
+        src: "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js",
+        integrity:
+          "sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa",
+        crossorigin: "anonymous",
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

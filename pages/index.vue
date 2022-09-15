@@ -1,9 +1,9 @@
 <template>
-  <h2>la ternura esta aqui !!</h2>
+  <NavBar />
 </template>
 
 <script>
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+};
 </script>

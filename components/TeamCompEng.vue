@@ -1,16 +1,20 @@
 <template>
   <div>
-    <h2 class="card-title mt-4">Nuestro equipo</h2>
+    <h2 class="card-title mt-4">Our team</h2>
     <div class="card mt-4">
       <div class="card-body">
-        <h5 class="card-title text-center">COORDINACIÓN</h5>
-        <div class="text-center">
-          <img
-            class="img-laura img-thumbnail"
-            src="@/assets/laura-motta.jpg"
-            alt="Laura Motta coordinadora"
-          />
-          <p class="card-text">Prof. Laura Motta</p>
+        <h5 class="card-title">COORDINATION</h5>
+        <div class="row">
+          <div class="col-4 d-flex align-items-center">
+            <p class="card-text">Prof. Laura Motta</p>
+          </div>
+          <div class="col-6 d-flex align-items-center">
+            <img
+              class="img-laura img-thumbnail"
+              src="@/assets/laura-motta.jpg"
+              alt="Laura Motta coordinadora"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -27,23 +31,7 @@
         </p>
         <h4 class="mb-n2">Ellos son:</h4>
         <div class="row padrinos-voluntarios">
-          <div
-            v-for="parent in godParents"
-            :key="parent"
-            class="col col-sm-12 col-lg-4"
-          >
-            <a :href="parent.linkedIn" target="_blank">
-              <div class="alert alert-secondary" role="alert">
-                <p>
-                  <span>
-                    <strong>{{ parent.name }}</strong>
-                  </span>
-                  <i v-if="parent.linkedIn" class="fab fa-linkedin"></i>
-                </p>
-                <p>{{ parent.descrip }}</p>
-              </div>
-            </a>
-          </div>
+          <!--  loop to fill this  -->
         </div>
       </div>
     </div>
@@ -54,7 +42,7 @@
           <div class="col-12 col-md-6">
             <div class="row">
               <div v-for="card in team" :key="card" class="col col-sm-12">
-                <div class="alert alert-secondary team-card" role="alert">
+                <div class="alert alert-secondary" role="alert">
                   <p class="mb-1">
                     <strong>{{ card.name }}</strong>
                     <a :href="card.linkedIn" target="_blank">
@@ -99,45 +87,6 @@ export default {
           linkedIn: "https://www.linkedin.com/in/valentinadubini/",
         },
       ],
-      godParents: [
-        {
-          name: "Julio Barreiro",
-          descrip: "Departamentos de Flores y Lavalleja",
-          linkedIn: "",
-        },
-        {
-          name: "Rosario Estrada",
-          descrip: "Departamento de Canelones",
-          linkedIn: "",
-        },
-        {
-          name: "Cecilia Cabrera",
-          descrip: "Departamento de Florida y Durazno",
-          linkedIn: "https://www.linkedin.com/in/ceciliacabreramartirena/",
-        },
-        {
-          name: "Maria Elena Schnyder",
-          descrip: "Departamento de Colonia y San José",
-          linkedIn:
-            "https://www.linkedin.com/in/mar%C3%ADa-elena-schnyder-33b98362/",
-        },
-        {
-          name: "Virginia Frade",
-          descrip: "Departamento de Maldonado",
-          linkedIn: "",
-        },
-        {
-          name: "Laura Motta",
-          descrip:
-            "Departamentos de Soriano, Salto, Artigas, Rivera, Tacuarembó, Cerro Largo, Treinta y Tres",
-          linkedIn: "",
-        },
-        {
-          name: "Martin Pedraza",
-          descrip: "Desarrollo web",
-          linkedIn: "https://www.linkedin.com/in/martin-pedraza-7bb3bb89/",
-        },
-      ],
     };
   },
   head() {
@@ -159,36 +108,17 @@ img {
   width: 100%;
 }
 
-a,
-.fa-linkedin {
-  text-decoration: none;
-  color: #007cc3;
-}
-
 .alert-secondary {
   min-width: 130px;
-  font-size: 0.85rem;
-  min-height: 82px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.alert-secondary p {
-  margin-bottom: 0;
-}
-.team-card {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.team-card p {
+.alert-secondary p {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
   min-width: 215px;
-  font-size: 1.1rem;
 }
 </style>

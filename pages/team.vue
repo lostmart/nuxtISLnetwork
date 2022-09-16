@@ -24,7 +24,8 @@
             </button>
           </li>
         </ul>
-        <TeamCompSp />
+        <TeamCompSp v-if="language === 'spanish'" />
+        <TeamCompEng v-if="language === 'english'" />
       </div>
     </div>
   </div>
@@ -57,6 +58,6 @@ export default {
   margin-bottom: 0.2em;
 }
 .img-laura {
-  max-width: 210px;
+  max-width: 325px;
 }
 </style>

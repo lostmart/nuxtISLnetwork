@@ -28,6 +28,9 @@
             >
           </li>
           <li class="nav-item">
+            <NuxtLink class="nav-link text-white" to="/team">EQUIPO</NuxtLink>
+          </li>
+          <li class="nav-item">
             <NuxtLink class="nav-link text-white" to="/faq">PREGUNTAS</NuxtLink>
           </li>
           <li class="nav-item">

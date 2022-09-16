@@ -5,6 +5,7 @@
       title="What is Inglés Sin Límites? / ¿Qué es Inglés Sin Límites?"
       id="headingOne"
       collapsNo="collapseOne"
+      show="true"
     />
     <AccordeonComp
       title="What is the Godparents Project? / ¿Qué es el Proyecto de
@@ -22,6 +23,23 @@
       id="headingFour"
       collapsNo="collapseFour"
     />
+    <AccordeonComp
+      title="What does a Godparent do? / ¿Qué hace un Godparent?"
+      id="headingFive"
+      collapsNo="collapseFive"
+    />
+    <AccordeonComp
+      title="How much time does being a Godparent involve *? / ¿Cuánto tiempo
+								le dedica un Godparent a la tarea*?"
+      id="headingSix"
+      collapsNo="collapseSix"
+    />
+    <AccordeonComp
+      title="Where can ISL materials be found? / ¿Dónde se encuentran los
+								materiales de ISL?"
+      id="headingSeven"
+      collapsNo="collapseSeven"
+    />
   </div>
 </template>
 
@@ -35,6 +53,12 @@ export default {
   head() {
     return {
       title: this.title,
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css",
+        },
+      ],
     };
   },
 };

@@ -78,5 +78,11 @@
       children from rural schools learn a foreign language with
       <strong> professional, active and motivated teachers.</strong>
     </p>
+    <img
+      style="max-width: 250px"
+      class="rounded mx-auto d-block"
+      src="@/assets/organizacion-centrada-en-alumno-islnetwork.jpg"
+      alt="organización del aprendizaje centrada en el alumno"
+    />
   </div>
 </template>

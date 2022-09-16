@@ -16,6 +16,7 @@
       <div
         :id="collapsNo"
         class="accordion-collapse collapse"
+        :class="{ show: show }"
         :aria-labelledby="id"
         data-bs-parent="#FAQaccordion"
       >
@@ -50,6 +51,12 @@
           <FaqThreeEng v-if="language === 'english' && id === 'headingThree'" />
           <FaqFourSp v-if="language === 'spanish' && id === 'headingFour'" />
           <FaqFourEng v-if="language === 'english' && id === 'headingFour'" />
+          <FaqFiveSp v-if="language === 'spanish' && id === 'headingFive'" />
+          <FaqFiveEng v-if="language === 'english' && id === 'headingFive'" />
+          <FaqSixSp v-if="language === 'spanish' && id === 'headingSix'" />
+          <FaqSixEng v-if="language === 'english' && id === 'headingSix'" />
+          <FaqSevenSp v-if="language === 'spanish' && id === 'headingSeven'" />
+          <FaqSevenEng v-if="language === 'english' && id === 'headingSeven'" />
         </div>
       </div>
     </div>
@@ -58,7 +65,7 @@
 
 <script>
 export default {
-  props: ["title", "id", "collapsNo"],
+  props: ["title", "id", "collapsNo", "show"],
   data() {
     return {
       language: "spanish",

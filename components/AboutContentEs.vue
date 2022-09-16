@@ -75,5 +75,11 @@
       de las escuelas rurales aprenden una lengua extranjera con un material de
       muy buena calidad y docentes profesionales motivados y motivadores.
     </p>
+    <img
+      style="max-width: 250px"
+      class="rounded mx-auto d-block"
+      src="@/assets/organizacion-centrada-en-alumno-islnetwork.jpg"
+      alt="organización del aprendizaje centrada en el alumno"
+    />
   </div>
 </template>

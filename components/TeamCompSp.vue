@@ -41,14 +41,11 @@
         <div class="row">
           <div class="col-12 col-md-6">
             <div class="row">
-              <div v-for="card in 4" :key="card" class="col col-sm-12">
+              <div v-for="card in team" :key="card" class="col col-sm-12">
                 <div class="alert alert-secondary" role="alert">
                   <p class="mb-1">
-                    <strong>Dr. Aldo Rodriguez</strong>
-                    <a
-                      href="https://www.linkedin.com/in/aldo-rodriguez-45515937"
-                      target="_blank"
-                    >
+                    <strong>{{ card.name }}</strong>
+                    <a :href="card.linkedIn" target="_blank">
                       <i class="fab fa-linkedin"></i>
                     </a>
                   </p>
@@ -108,6 +105,47 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      title: "ISL network equipo",
+      language: "spanish",
+      team: [
+        {
+          name: "Dr. Aldo Rodriguez",
+          linkedIn: "https://www.linkedin.com/in/aldo-rodriguez-45515937",
+        },
+        {
+          name: "Prof. Florencia Perez",
+          linkedIn:
+            "https://www.linkedin.com/in/mar%C3%ADa-florencia-p%C3%A9rez-784134216/",
+        },
+        {
+          name: "Mta. Valentina Alpuin",
+          linkedIn: "https://www.linkedin.com/in/valentinaalpuin/",
+        },
+        {
+          name: "Prof. Valentina Dubini",
+          linkedIn: "https://www.linkedin.com/in/valentinadubini/",
+        },
+      ],
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css",
+        },
+      ],
+    };
+  },
+};
+</script>
+
 <style scoped>
 img {
   width: 100%;
@@ -124,5 +162,6 @@ img {
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
+  min-width: 215px;
 }
 </style>

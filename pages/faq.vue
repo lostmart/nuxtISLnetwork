@@ -12,6 +12,16 @@
       id="headingTwo"
       collapsNo="collapseTwo"
     />
+    <AccordeonComp
+      title="How is ISL implemented? / ¿Cómo se implementa ISL?"
+      id="headingThree"
+      collapsNo="collapseThree"
+    />
+    <AccordeonComp
+      title="How is ISL fully implemented in the classroom? ¿Cómo se implementa ISL en el aula al 100%?"
+      id="headingFour"
+      collapsNo="collapseFour"
+    />
   </div>
 </template>
 

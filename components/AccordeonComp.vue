@@ -46,6 +46,10 @@
           <FaqOneEng v-if="language === 'english' && id === 'headingOne'" />
           <FaqTwoSp v-if="language === 'spanish' && id === 'headingTwo'" />
           <FaqTwoEng v-if="language === 'english' && id === 'headingTwo'" />
+          <FaqThreeSp v-if="language === 'spanish' && id === 'headingThree'" />
+          <FaqThreeEng v-if="language === 'english' && id === 'headingThree'" />
+          <FaqFourSp v-if="language === 'spanish' && id === 'headingFour'" />
+          <FaqFourEng v-if="language === 'english' && id === 'headingFour'" />
         </div>
       </div>
     </div>

@@ -9,6 +9,9 @@
 </template>
 
 <style>
+main {
+  min-height: 325px;
+}
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.2s;

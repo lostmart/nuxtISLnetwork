@@ -34,6 +34,9 @@
             <NuxtLink class="nav-link text-white" to="/faq">PREGUNTAS</NuxtLink>
           </li>
           <li class="nav-item">
+            <NuxtLink class="nav-link text-white" to="/voces">VOCES</NuxtLink>
+          </li>
+          <li class="nav-item">
             <a
               class="nav-link text-white"
               href="mailto: ruralgodparents@gmail.com"

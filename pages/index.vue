@@ -39,7 +39,17 @@
 
 <script>
 export default {
-  name: "IndexPage",
+  name: "index",
+  data() {
+    return {
+      title: "ISL network",
+    };
+  },
+  head() {
+    return {
+      title: this.title,
+    };
+  },
 };
 </script>
 

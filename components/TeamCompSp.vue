@@ -30,7 +30,7 @@
           <div
             v-for="parent in godParents"
             :key="parent"
-            class="col col-sm-12 col-lg-4"
+            class="col col-sm-6 col-lg-4"
           >
             <a :href="parent.linkedIn" target="_blank">
               <div class="alert alert-secondary" role="alert">
@@ -51,9 +51,9 @@
       <div class="card-body">
         <h5 class="card-title">Equipo de enlace ISL</h5>
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-sm-12 col-md-6">
             <div class="row">
-              <div v-for="card in team" :key="card" class="col col-sm-12">
+              <div v-for="card in team" :key="card" class="col">
                 <div class="alert alert-secondary team-card" role="alert">
                   <p class="mb-1">
                     <strong>{{ card.name }}</strong>
@@ -65,12 +65,31 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-sm-12 col-md-6">
             <img src="@/assets/isl-20.jpg" alt="godparents around the world" />
           </div>
         </div>
       </div>
     </div>
+    <hr />
+    <a
+      href="https://www.linkedin.com/in/martin-pedraza-7bb3bb89/"
+      target="_blank"
+    >
+      <div
+        class="alert alert-secondary mx-auto"
+        role="alert"
+        style="margin-bottom: 0"
+      >
+        <p>
+          <span>
+            <strong>Martin Pedraza</strong>
+          </span>
+          <i class="fab fa-linkedin"></i>
+        </p>
+        <p>Desarrollo web</p>
+      </div>
+    </a>
   </div>
 </template>
 
@@ -132,11 +151,6 @@ export default {
             "Departamentos de Soriano, Salto, Artigas, Rivera, Tacuarembó, Cerro Largo, Treinta y Tres",
           linkedIn: "",
         },
-        {
-          name: "Martin Pedraza",
-          descrip: "Desarrollo web",
-          linkedIn: "https://www.linkedin.com/in/martin-pedraza-7bb3bb89/",
-        },
       ],
     };
   },
@@ -167,8 +181,9 @@ a,
 
 .alert-secondary {
   min-width: 130px;
+  max-width: 334px;
   font-size: 0.85rem;
-  min-height: 82px;
+  min-height: 84px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

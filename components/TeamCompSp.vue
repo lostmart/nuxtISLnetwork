@@ -177,6 +177,8 @@ a,
 .fa-linkedin {
   text-decoration: none;
   color: #007cc3;
+  font-size: 1.2rem;
+  margin-left: 0.5em;
 }
 
 .alert-secondary {
@@ -192,6 +194,9 @@ a,
 }
 .alert-secondary p {
   margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .team-card {
   display: flex;
@@ -202,7 +207,6 @@ a,
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 2rem;
   min-width: 215px;
   font-size: 1.1rem;
 }

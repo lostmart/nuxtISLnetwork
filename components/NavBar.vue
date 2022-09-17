@@ -48,3 +48,9 @@
     </div>
   </nav>
 </template>
+
+<style scoped>
+.bg-primary {
+  background-color: var(--prim-clr) !important;
+}
+</style>

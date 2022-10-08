@@ -19,6 +19,12 @@
         <VideoPlayer class="video_player" :videoURL="videoURL_three" />
       </div>
     </div>
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">Title 04</h5>
+        <VideoPlayer class="video_player" :videoURL="videoURL_four" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -33,6 +39,8 @@ export default {
         "https://prolinguas.net/assets/videos/isl-network/video-01.mp4",
       videoURL_three:
         "https://prolinguas.net/assets/videos/isl-network/video-3.mp4",
+      videoURL_four:
+        "https://prolinguas.net/assets/videos/isl-network/video-4.mp4",
     };
   },
   head() {

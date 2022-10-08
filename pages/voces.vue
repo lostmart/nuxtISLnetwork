@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="text-center">FAQ</h2>
+    <h2 class="text-center">Voces</h2>
     <div class="card">
       <div class="card-body text-center">
         <h5 class="card-title">Title 01</h5>

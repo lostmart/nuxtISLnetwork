@@ -125,11 +125,6 @@ export default {
           linkedIn: "",
         },
         {
-          name: "Rosario Estrada",
-          descrip: "Departamento de Canelones",
-          linkedIn: "",
-        },
-        {
           name: "Cecilia Cabrera",
           descrip: "Departamento de Florida y Durazno",
           linkedIn: "https://www.linkedin.com/in/ceciliacabreramartirena/",

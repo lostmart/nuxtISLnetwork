@@ -4,7 +4,7 @@
     <div class="row justify-content-around p-4">
       <div
         v-for="book in books"
-        class="col-2 alert alert-primary d-flex justify-content-center"
+        class="col-sm-2 alert alert-primary d-flex justify-content-center"
         role="alert"
       >
         <a target="_blank" :href="book.link">{{ book.title }}</a>

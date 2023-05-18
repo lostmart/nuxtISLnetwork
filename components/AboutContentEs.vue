@@ -76,10 +76,15 @@
       muy buena calidad y docentes profesionales motivados y motivadores.
     </p>
     <img
-      style="max-width: 250px"
-      class="rounded mx-auto d-block"
+      class="rounded mx-auto d-block w-25 my-5"
       src="@/assets/organizacion-centrada-en-alumno-islnetwork.jpg"
       alt="organización del aprendizaje centrada en el alumno"
     />
+    <a
+      class="btn btn-primary mt-4 d-block mx-auto w-25"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfEukFLvxJvAOq7UqLXDBiMVTsljGST9EDPUllONK7Z_JtK6w/viewform?usp=send_form"
+      target="_blank"
+      >únete</a
+    >
   </div>
 </template>

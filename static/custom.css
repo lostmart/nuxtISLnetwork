@@ -1,12 +1,8 @@
-:root {
-  --prim-clr: #418bd0;
-}
-
 h1 {
   color: var(--prim-clr);
   font-family: impact;
 }
 
 .bg-primary {
-  background-color: var(--prim-clr) !important;
+  background-color: #418bd0 !important;
 }

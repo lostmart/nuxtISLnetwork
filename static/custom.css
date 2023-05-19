@@ -1,6 +1,14 @@
+:root {
+  --prim-clr: #418bd0;
+}
+
 h1 {
   color: var(--prim-clr);
   font-family: impact;
+}
+
+main {
+  min-height: 70vh !important;
 }
 
 .bg-primary {

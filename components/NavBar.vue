@@ -57,6 +57,6 @@
 
 <style scoped>
 .bg-primary {
-  background-color: var(--prim-clr) !important;
+  background-color: #418bd0 !important;
 }
 </style>

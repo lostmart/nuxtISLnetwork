@@ -22,18 +22,25 @@
         class="mx-auto bg-primary p-4"
         @submit.prevent="handleSubmit"
       >
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label mb-3"
-            >Password</label
-          >
+        <label for="inputPassword" class="form-label mb-3">Password</label>
+        <div class="input-group mb-3">
           <input
-            type="password"
+            :type="inputType"
             class="form-control"
-            id="exampleInputPassword1"
+            id="inputPassword"
             v-model="input"
           />
+          <button
+            class="btn btn-light"
+            type="button"
+            id="button-addon2"
+            @click="togglePassVis"
+          >
+            <i v-if="!passShw" class="far fa-eye-slash"></i>
+            <i v-else class="far fa-eye"></i>
+          </button>
         </div>
-        <button type="submit" class="btn btn-secondary">Submit</button>
+        <button type="submit" class="btn btn-secondary d-block">Submit</button>
       </form>
     </div>
   </section>
@@ -67,14 +74,21 @@ export default {
           link: "https://www.youtube.com/playlist?list=PLtupDLnojS6s_LeuiI141CCc8fctt1fgZ",
         },
       ],
-      cogin: "123456",
+      cogin: "Gdp2019",
       show: false,
       input: "",
+      passShw: false,
     };
   },
   head() {
     return {
       title: this.title,
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css",
+        },
+      ],
     };
   },
   methods: {
@@ -87,6 +101,15 @@ export default {
         this.$refs.formPass.classList.remove("shake");
         this.input = "";
       }, 450);
+    },
+    togglePassVis() {
+      this.passShw = !this.passShw;
+    },
+  },
+  computed: {
+    inputType: function () {
+      if (!this.passShw) return "password";
+      else return "text";
     },
   },
 };

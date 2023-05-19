@@ -12,7 +12,7 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/png", href: "/favicon-32x32.png" },
-      { rel: "stylesheet", href: "custom.css" },
+      { rel: "stylesheet", href: "/custom.css" },
     ],
     script: [
       {
